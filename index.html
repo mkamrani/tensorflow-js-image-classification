@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <img id="img1" src="./manja-vitolic-gKXKBY-C-Dk-unsplash.jpg" width="320"/>
+    <img id="img2" src="./marliese-streefland-2l0CWTpcChI-unsplash.jpg" width="320"/>
+    <img id="img3" src="./giorgio-trovato-K62u25Jk6vo-unsplash.jpg" width="320"/>
+
+    <div>Image one is %<span id="img1_prob"></span> a/an <span id="img1_class"></span></div>
+    <div>Image two is %<span id="img2_prob"></span> a/an <span id="img2_class"></span></div>
+    <div>Image three is %<span id="img3_prob"></span> a/an <span id="img3_class"></span></div>
+
+    <button style="display: block; width: 200px; margin-left: 200px; background-color: #10f; color: white" onclick="predict()">predict</button>
+
+    <small>All images: unsplash.com</small>
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
